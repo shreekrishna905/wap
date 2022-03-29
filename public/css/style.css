@@ -6,13 +6,26 @@ h1 {
     color: #a5bfe9;
 }
 
-ul li a {
+ol li a {
     text-decoration: none;
     color: red;
 }
 
+ ol li a:hover { 
+    text-decoration: underline;
+ }
+
 h2 {
     color: #a5bfe9;
+}
+
+div.sub-desc > p{
+    color: #ffff00;
+}
+
+div.sub-desc p.director-name{
+    padding-inline-start: 40px;
+    color: #fff;
 }
 
 
@@ -24,15 +37,23 @@ p {
     color: #fff;
 }
 
+p#intro {
+    transform: rotateX(180deg);
+}
+
 p#intro span {
     color:#cbc08b;
 }
 
-#country {
+p#intro::first-letter{
+    font-size: 3em;
+}
+
+#mood {
     color: #fff;
 }
 
-#country img {
+#mood img {
     height: 194px;
     width: 259px;
 }
