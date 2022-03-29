@@ -1,0 +1,39 @@
+body {
+    background-color: #595647;
+    color: #fff;
+}
+h1 {
+    color: #a5bfe9;
+}
+
+ul li a {
+    text-decoration: none;
+    color: red;
+}
+
+h2 {
+    color: #a5bfe9;
+}
+
+
+h3 {
+    color: #a5bfe9;
+}
+
+p {
+    color: #fff;
+}
+
+p#intro span {
+    color:#cbc08b;
+}
+
+#country {
+    color: #fff;
+}
+
+#country img {
+    height: 194px;
+    width: 259px;
+}
+
