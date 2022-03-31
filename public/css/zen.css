@@ -1,5 +1,6 @@
 body{
   font-size: 18px;
+  margin: 0px;
 }
 p{
   line-height:1.5;
@@ -11,14 +12,12 @@ a{
 }
 .container {
     display: grid;
-  
     grid-template-areas:
       "header header"
       "content nav"
       "footer footer";
     grid-template-columns: 1fr 0.5fr;
     grid-template-rows: auto auto 300px;
-    grid-gap: 10px;
     height: 100vh;
   }
 
@@ -83,12 +82,19 @@ a{
     background-color: #ffffff;
   }
 
-  #main-content {
-    margin: 50px 80px 50px 150px;
+  .main-content {
+    padding: 50px 80px 150px 150px;
 
   }
 
-  #main-content h1 {
+  .background-image {
+    background-attachment: scroll, scroll, fixed;
+    background-color: rgba(138,188,159,0.5);
+    background-image: url(../image/contours-opaque.png), url(../images/gridlines-opaque.png), url(../images/bamboo.png);
+    background-repeat: repeat, repeat, repeat;
+  }
+
+  .main-content h1 {
     text-transform: uppercase;
     font-size: 25px;
 
@@ -109,7 +115,11 @@ a{
   }
 
   nav .side-bar {
-    margin: 50px 0px 0px 50px;
+    padding: 50px 0px 96px 50px;
+  }
+
+  .side-bar2 {
+    padding: 50px 0px 289px 50px !important;
   }
 
   nav .side-bar ul {
@@ -134,8 +144,31 @@ a{
     color: #616857;
   }
   
-  
   footer {
-      background-color: yellow;
     grid-area: footer;
+  }
+
+  footer .advert{
+    background-image: url("../images/huntington.jpg");
+   
+  }
+
+  footer .links{
+    background-color: #134347;
+    height: 150px;
+   
+  }
+
+  footer .icons {
+    padding: 50px 200px;
+  }
+
+  footer p{
+    font-family: cursive;
+    text-align: center;
+    padding-bottom: 3em;
+    margin: 0px;
+    padding-top: 3em;
+    color: #85a09d;
+    font-weight: bold;
   }
