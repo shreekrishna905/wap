@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" href="../public/css/webshop.css" rel="stylesheet" />
+    <title>Webshop Registration</title>
+</head>
+<body>
+
+    <div class="container">
+        <form>
+        <header>
+            <div class="header-content">
+                <h2>Webshop Registration</h2>
+                <a href="#">More Action <img src="../public/images/down.png" height="10px" width="10px" /></a> 
+            </div>
+        </header>
+        <main>
+            <a href="#">Register now while seats are available</a>
+            <div id="content">
+                    <div class="left-side">
+
+                        <div class="form-control">
+                            <label for="first-name">First Name <span class="required">*</span></label><input id="first-name" type="text" name="first_name" />
+                        </div>
+                        
+                        <div class="form-control">
+                            <label for="last-name">Last name <span class="required">*</span></label><input id="last-name" type="text" name="last_name" />
+                        </div>
+
+                        <div class="form-control">
+                            <label for="company-instituation">Company Institution<span class="required">*</span></label><input id="company-instituation" type="text" name="company_instituation" />
+                        </div>
+
+                        <div class="form-control">
+                            <label for="address">Address</label><textarea id="address" rows="3"  name="address"></textarea>
+                        </div>
+
+                        <div class="form-control">
+                            <label for="city">City</label><input id="city" type="text" name="city" />
+                        </div>
+
+                        <div class="form-control">
+                            <label for="state">State/Province/Region</label>
+                            <select id="state">
+                                <option>-Select</option>
+                                <option>IOWA</option>
+                            </select>
+                        </div>
+
+                        <div class="form-control">
+                            <label for="country">Country</label>
+                            <select id="country">
+                                <option>-Select</option>
+                                <option>USA</option>
+                            </select>
+                        </div>
+
+                        <div class="form-control">
+                            <label for="email">Email <span class="required">*</span></label><input id="email" type="text" name="email" />
+                        </div>
+
+                        <div class="form-control">
+                            <label for="phone-number">Phone Number <span class="required">*</span></label><input id="phone-number" type="text" name="phone-number" />
+                        </div>
+
+                    </div>
+                    <div class="right-side">
+                        <a href="#">Launch</a>
+                        <div class="form-control">
+                            <label for="state">Meal Preference</label>
+                            <select id="state">
+                                <option>Vegetarian</option>
+                            </select>
+                        </div>
+                        <a href="#">Payment Details</a>
+                        <div class="form-control">
+                            <label for="state">Payment mode</label>
+                            <div class="form-group">
+                                <div><input type="checkbox" value="cash" /> Cash</div>
+                                <div><input type="checkbox" value="cheque"/> Cheque</div>
+                                <div><input type="checkbox" value="draft"/> Demand Draft</div>
+                            </div>
+                        </div>
+                        <div class="form-control">
+                            <label for="cheque-no">DD/Cheque No</label><input id="cheque-no" type="text" name="company_instituation" />
+                        </div>
+                        <div class="form-control">
+                            <label for="drawn-on">Drawn On (Bank Name)</label><input id="drawn-on" type="text" name="company_instituation" />
+                        </div>
+                        <div class="form-control">
+                            <label for="payable-at">Payable At</label><input id="payable-at" type="text" name="company_instituation" />
+                        </div>
+                    </div>
+            </div>
+        </main>
+        <footer>
+                <div class="submit">
+                    <input type="submit" value="Submit" />
+                    <input type="reset" value="Reset" />
+                </div>
+        </footer>
+    </form>
+    </div>
+
+    
+</body>
+</html>

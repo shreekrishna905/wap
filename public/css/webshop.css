@@ -1,0 +1,100 @@
+.container {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "content"
+      "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px auto auto;
+  }
+
+  input[type="checkbox"]{
+    margin: 0px;
+  }
+
+  a {
+      color: #000000;
+  }
+
+  header {
+    grid-area: header;
+    background-color: aquamarine;
+  }
+
+  .header-content {
+    padding: 50px;
+    display: flex;
+  }
+
+  .header-content h2 {
+    margin: 10px 0px;
+  }
+
+  .header-content a {
+    text-decoration: none;
+    margin: 15px 35px;
+  }
+
+  .required {
+      color: red;
+  }
+
+  textarea {
+    width: 200px;
+  }
+
+  input[type="text"] {
+      width: 200px;
+  }
+
+  select {
+    width: 200px;
+  }
+
+  main {
+      grid-area: content;
+      padding: 10px;
+  }
+
+  .form-control {
+      display: flex;
+      margin-bottom: 25px;
+  }
+
+  .form-control label {
+      width: 50%;
+  }
+
+  .submit{
+    width: 20%;
+    margin: auto;
+  }
+
+  .submit input {
+    background-color: aquamarine;
+    width: 100px;
+    height: 30px;
+  }
+
+  #content {
+    display: flex;
+    justify-content: space-between; 
+  }
+
+
+  #content .left-side {
+      margin-top: 20px;
+      width: 50%;
+      
+  }
+
+  #content .right-side {
+    margin: 0px 0px 0px 30px;
+    width: 50%;
+}
+
+  footer{
+      grid-area: footer;
+      height: 100px;
+      background-color: grey;
+  }
