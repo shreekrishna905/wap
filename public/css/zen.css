@@ -1,0 +1,141 @@
+body{
+  font-size: 18px;
+}
+p{
+  line-height:1.5;
+}
+
+a{
+  text-decoration: none;
+  color: #d9e3dc;
+}
+.container {
+    display: grid;
+  
+    grid-template-areas:
+      "header header"
+      "content nav"
+      "footer footer";
+    grid-template-columns: 1fr 0.5fr;
+    grid-template-rows: auto auto 300px;
+    grid-gap: 10px;
+    height: 100vh;
+  }
+
+  header {
+    grid-area: header;
+    display: flex;
+    background-image: url("../images/huntington.jpg");
+  }
+
+  header .logo{
+      display:flex;
+      flex-basis: 70%;
+      padding: 50px 150px;
+  }
+
+  header .view {
+    display:flex;
+    flex-basis: 30%;
+    padding: 50px  50px 50px 150px;
+  }
+
+  header .view ul{
+    margin-top: 70px;
+    list-style: none;
+  
+  }
+
+  header .view ul li {
+    display: inline-block;
+    height: 50px;
+  }
+
+  header .view ul li a:hover {
+    color: #49968e;
+  }
+  
+
+  header .logo h1 {
+      color: #ffffff;
+      font-family: system-ui;
+      font-weight: lighter;
+      font-size: 50px;
+      text-transform: uppercase;
+      margin-bottom: 0px;
+      padding-left: 50px;
+  }
+
+  header .logo h2 {
+    color: #ffffff;
+    margin: 0px;
+    font-family: cursive;
+    padding-left: 50px;
+}
+
+  header .logo img {
+      width: 150px;
+      height: 150px;
+  }
+  
+  main {
+    grid-area: content;
+    background-color: #ffffff;
+  }
+
+  #main-content {
+    margin: 50px 80px 50px 150px;
+
+  }
+
+  #main-content h1 {
+    text-transform: uppercase;
+    font-size: 25px;
+
+  }
+
+  p.download a{
+    text-decoration: none;
+  }
+
+  p.download a:hover{
+    text-decoration: none;
+    background-color: #0d8ba1;
+  }
+  
+  nav {
+    grid-area: nav;
+    background-color: #e5ede8;
+  }
+
+  nav .side-bar {
+    margin: 50px 0px 0px 50px;
+  }
+
+  nav .side-bar ul {
+    list-style-type: none;
+  }
+
+  nav .side-bar li {
+    padding: 25px 0px;
+    border-bottom: 1px solid #d9e3dc;
+  }
+
+  nav .side-bar li a{
+    text-decoration: none;
+  }
+
+  nav .side-bar li a.design-name{
+    display: block;
+    color: #49968e;
+  }
+
+  nav .side-bar li a.designer-name{
+    color: #616857;
+  }
+  
+  
+  footer {
+      background-color: yellow;
+    grid-area: footer;
+  }
